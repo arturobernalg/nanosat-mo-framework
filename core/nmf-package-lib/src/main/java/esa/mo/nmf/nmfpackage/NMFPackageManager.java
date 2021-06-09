@@ -481,8 +481,7 @@ public class NMFPackageManager {
 
     private static String generateFilePathForSystem(final String path) {
         String out = path.replace('/', File.separatorChar);
-        String out2 = out.replace('\\', File.separatorChar);
-        return out2;
+        return out.replace('\\', File.separatorChar);
     }
 
     private static void copyFiles(final NMFPackageDescriptor descriptor,
